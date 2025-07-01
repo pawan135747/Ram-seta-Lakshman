@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Advanced website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: darkblue;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav{
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+
+    }
+
+    nav a {
+        color: #f4f4f4;
+        margin: 0 20px;
+        text-decoration: none;
+        transition: 1.3s;
+        font-size: 20px;
+
+    }
+    nav a:hover{
+        color: yellow;
+    }
+
+    .project-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .project-info p {
+      color: #555;
+    }
+
+    .project-info a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #fff;
+      background: #003366;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .project-info a:hover {
+      background: #0055aa;
+    }
+
+    footer {
+      text-align: center;
+      background: blue;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index2.html">About</a>
+    <a href="#">Projects</a>
+    <a href="index4.html">Contact</a>
+      
+</nav>
+
+  <header>
+    <h1>My Projects</h1>
+    <p>Some cool work I've created during my learning journey</p>
+  </header>
+
+
+
+  <section class="project-section">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="https://picsum.photos/300/200?random=1" alt="Project 1">
+      <div class="project-info">
+        <h3>My First Website</h3>
+        <p>A clean and simple homepage using HTML and CSS.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="https://picsum.photos/300/200?random=2" alt="Project 2">
+      <div class="project-info">
+        <h3>Canvas Drawing</h3>
+        <p>Fun with HTML5 Canvas: lines, shapes, and colors.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="https://picsum.photos/300/200?random=3" alt="Project 3">
+      <div class="project-info">
+        <h3>Advanced Homepage</h3>
+        <p>Fully responsive homepage with animated header and SVG background.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Pawan Puri. All rights reserved.
+  </footer>
+
+</body>
+</html>
